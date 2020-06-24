@@ -1,0 +1,124 @@
+@media (max-width: 1100px) {
+    #services .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    #services .services-grid li {
+        width: 300px;
+        height: 400px;
+    }
+    #services .services-grid li span {
+        margin-top: 60px;
+    }
+    #company .company-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    #company .company-grid li {
+        width: 300px;
+        height: 330px;
+    }
+    #company .company-grid .grid-bottom span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    #services .services-grid {
+        grid-template-columns: 1fr;
+    }
+    #services .services-grid li {
+        width: 450px;
+        height: 300px;
+    }
+    #services .services-grid li span {
+        margin-top: 40px;
+    }
+    #company .company-grid {
+        grid-template-columns: 1fr;
+    }
+    #company .company-text h1 {
+        padding: 0 50px;
+    }
+    #company .company-grid li {
+        width: 400px;
+        height: 330px;
+    }
+    #company .company-grid .grid-bottom span {
+        font-size: 12px;
+    }
+    #footer-one .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    #footer-one .footer-grid li {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer-one .footer-grid li p {
+        text-align: center;
+    }
+    #footer-two .text-footer {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    #header .box-header {
+        flex-direction: column;
+    }
+    #header .box-header nav {
+        margin-top: 15px;
+    }
+    #banner .banner-text {
+        margin-top: 20%;
+    }
+    #banner .banner-text h1 {
+        font-size: 30px;
+    }
+    #services .services-text h1 {
+        font-size: 30px;
+    }
+    #services .services-grid {
+        grid-template-columns: 1fr;
+    }
+    #services .services-grid li {
+        width: 250px;
+        height: 300px;
+    }
+    #services .services-grid li p {
+        font-size: 14px;
+    }
+    #info .info-text h1 {
+        font-size: 30px;
+    }
+    #company .company-text h1 {
+        font-size: 20px;
+
+        padding: 0 50px;
+    }
+    #company .company-grid {
+        grid-template-columns: 1fr;
+    }
+    #company .company-grid li {
+        width: 250px;
+        height: 330px;
+    }
+    #company .company-grid .grid-bottom span {
+        font-size: 12px;
+    }
+    #footer-one .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    #footer-one .footer-grid li {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer-one .footer-grid li p {
+        text-align: center;
+    }
+    #footer-two .text-footer {
+        flex-direction: column;
+        font-size: 14px;
+    }
+    #footer-two .text-footer i {
+        margin-bottom: 10px;
+    }
+}

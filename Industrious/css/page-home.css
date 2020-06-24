@@ -1,0 +1,416 @@
+/* Header Start */
+
+#header {
+    height: 100%;
+    background-color: var(--black-origin);
+}
+
+#header .box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 20px;
+}
+
+#header .box-header > a {
+    font-size: 20px;
+    color: var(--white-origin);
+    text-transform: uppercase;
+}
+
+#header .box-header nav {
+    display: flex;
+}
+
+#header .box-header nav li {
+    margin-left: 20px;
+}
+
+#header .box-header nav li a {
+    color: var(--gray-clear);
+    text-transform: uppercase;
+}
+
+/* Header End */
+
+/* Banner Start */
+
+#banner {
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+    display: flexbox;
+    background-image: url(../images/metro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+#banner .overlay-banner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    object-fit: cover;
+}
+
+#banner .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%
+}
+
+#banner .banner-text h1 {
+    font-size: 50px;
+    color: var(--white-origin);
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    transform: scale(1) translateY(50vh);
+    animation: 2s ease 500ms animacaoTitulo forwards;
+    opacity: 0;
+}
+
+#banner .banner-text h3 {
+    text-align: center;
+    color: var(--gray-clear);
+    font-weight: lighter;
+    line-height: 25px;
+    width: 60%;
+    transform: scale(1) translateY(50vh);
+    animation: 2s ease 500ms animacaoTitulo forwards;
+    opacity: 0;
+}
+
+/* h1 e h3 Banner */
+@keyframes animacaoTitulo {
+    from {
+      transform: scale(1) translateY(50vh);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Banner End */
+
+  /* Services Start */
+
+  #services {
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;    
+  }
+
+  #services .overlay-services {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    background: rgba(255, 255, 255, 0.9);
+    object-fit: cover;
+}
+
+  #services .services-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  #services .services-text h1 {
+      color: var(--gray-dark);
+      font-family: 'Dosis', sans-serif;
+      font-size: 40px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+  }
+
+  #services .services-text p {
+      width: 60%;
+
+      margin-top: 40px;
+
+      color: var(--gray-dark);
+      text-align: center;
+      font-weight: lighter;
+  }
+
+  #services .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+
+    margin-top: 60px;
+  }
+
+  #services .services-grid li {
+    background-color: var(--white-origin);
+
+    width: 350px;
+    height: 400px;
+    padding: 32px 24px 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px var(--gray-clear), 4px 4px #ff8f9c;
+}
+
+#services .services-grid li i {
+    color: #ff8f9c;
+    font-size: 80px;
+}
+
+#services .services-grid li span {
+    color: var(--gray-dark);
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-top: 80px;
+}
+#services .services-grid li p {
+    color: var(--gray-dark);
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+/* Services End */
+
+/* Info Start */
+
+#info {
+    padding: 100px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../images/cta01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center; 
+  }
+
+  #info .info-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  #info .info-text h1 {
+      color: var(--white-origin);
+      font-family: 'Dosis', sans-serif;
+      letter-spacing: 3px;
+      font-weight: normal;
+      font-size: 30px;
+      margin-bottom: 20px;
+  }
+  #info .info-text p {
+      color: var(--gray-clear);
+      font-weight: lighter;
+
+      width: 70%;
+  }
+
+  /* Info End */
+
+  /* Company Start */
+
+  #company {
+    width: 100%;
+    min-height: 200px;
+
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;    
+  }
+  #company .overlay-company {
+    width: 100%;
+    height: 100%;
+
+    padding: 80px 0;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    object-fit: cover;
+}
+#company .company-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#company .company-text h1 {
+    color: var(--gray-dark);
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#company .company-text p {
+    width: 60%;
+
+    margin-top: 40px;
+
+    color: var(--gray-dark);
+    text-align: center;
+    font-weight: lighter;
+}
+#company .company-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+
+    margin-top: 60px;
+}
+#company .company-grid li {
+    background-color: var(--white-origin);
+
+    width: 350px;
+    height: 250px;
+
+    padding: 32px 24px 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 8px;
+}
+
+#company .company-grid li i {
+    font-size: 20px;
+    color: var(--gray-clear);
+}
+
+#company .company-grid li p {
+    color: var(--gray-dark);
+    font-weight: lighter;
+
+    margin: 30px 0;
+}
+
+#company .company-grid li .grid-bottom {
+    display: flex;
+    align-items: center;
+}
+
+#company .company-grid li .grid-bottom img {
+    width: 60px;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+
+#company .company-grid li .grid-bottom span {
+    font-weight: lighter;
+}
+
+#company .company-grid li .grid-bottom span strong {
+    color: #ff8f9c;
+    font-weight: lighter;
+}
+
+/* Company End */
+
+/* Footer 1 */
+
+#footer-one {
+    background-color: #111111;
+}
+
+#footer-one .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 50px 0px 20px 0px;
+}
+
+#footer-one .footer-grid li {
+    padding: 30px 30px;
+
+    display: flex;
+    
+    flex-direction: column;
+
+}
+
+#footer-one .footer-grid li h3 {
+    color: var(--white-origin);
+    font-weight: lighter;
+
+    margin-bottom: 15px;
+}
+#footer-one .footer-grid li p {
+    font-weight: lighter;
+    color: var(--gray-clear);
+    font-size: 14px;
+}
+#footer-one .footer-grid li a {
+    margin-bottom: 20px;
+    font-weight: lighter;
+    color: var(--gray-clear);
+}
+#footer-one .footer-grid li a:hover {
+    color: #ff8f9c;
+
+    transition: 400ms;   
+}
+#footer-one .footer-grid li a p {
+    border-bottom: 1px solid var(--gray-clear);
+
+    margin-top: 10px;
+
+    opacity: 0.2;
+}
+#footer-one .footer-grid li strong {
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+#footer-two {
+    background-color: var(--black-origin);
+
+    padding: 20px;
+}
+
+#footer-two .text-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--white-origin);
+    font-weight: lighter;
+}
+#footer-two .text-footer i {
+    margin-right: 3px;
+}
+#footer-two .text-footer a {
+    color: var(--gray-clear);
+    margin: 0 3px;
+}
